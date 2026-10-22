@@ -1,0 +1,192 @@
+
+body {
+  margin: 0px;
+  min-height: 100vh;
+  font-family: Arial, sans-serif;
+}
+/* ---- reset ---- */ 
+canvas{ 
+    display: block; 
+    vertical-align: bottom; 
+} 
+/* ---- particles.js container ---- */ 
+#particles-js{ 
+    position:absolute; 
+    width: 100%; 
+    height: 100%; 
+    background-color: #f7b1b0; 
+    background-repeat: no-repeat; 
+    background-size: 20%; 
+    background-position: 50% 50%; 
+    z-index: 0;
+
+     -webkit-mask-image: radial-gradient(
+        ellipse at center,
+        black 40%,
+        transparent 100%
+    );
+
+    mask-image: radial-gradient(
+        ellipse at center,
+        black 40%,
+        transparent 100%
+    );
+} 
+    
+.js-count-particles{ font-size: 1.1em; } 
+
+#stats{ 
+    -webkit-user-select: none; 
+    margin-top: 5px; 
+    margin-left: 5px; 
+    border-radius: 3px 3px 0 0; 
+    overflow: hidden; 
+} 
+
+.count-particles{ border-radius: 0 0 3px 3px; }
+
+
+h1 {
+  color: #FEEAC7;
+  font-size: 78px;
+  margin: 0;
+}
+
+h2 {
+  color: #4a4f18;
+  font-size: 58px;
+}
+
+h3 {
+  color: #4a4f18;
+  font-size: 38px;
+  font-family: sans-serif;
+  font-weight: normal;
+  margin: 0px 0px 40px 0px;
+
+}
+
+p {
+  color: #842c2a;
+  font-size: 28px;
+}
+
+/*button {
+  color: #842c2a;
+  font-size: 16px;
+  margin-top: 40px;
+  background: rgba(254, 234, 199, 0.30);
+  padding: 6px 16px;
+  gap: 16px;
+  border: none;
+  border-radius: 8px;
+}*/
+
+/* Menu */
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  box-sizing: border-box;
+  z-index: 9999;
+
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+
+  padding: 20px 40px;
+  background:#F7B1B0;
+}
+
+.nav-links {
+  display: flex;
+  gap: 16px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-links a,
+button {
+  color: #842c2a;
+  text-decoration: none;
+  transition: color 0.3s ease;
+  background: rgba(254, 234, 199, 0.25);
+  padding: 6px 16px;
+  border-radius: 8px;
+  border: none;
+  font-size: 16px;
+}
+
+/* Hover effect */
+.nav-links a:hover,
+.nav-links a.active,
+button:hover {
+  color: #842c2a;
+  background: rgba(132, 44, 42, 0.15);
+}
+
+.section {
+    box-sizing: border-box;
+}
+
+#home {
+    background:#f7b1b0;
+    min-height: 100vh;
+    position: relative;
+    overflow: hidden;
+}
+
+
+#projects {
+    background: #FEEAC7;
+    min-height: 140vh;
+    padding: 10px 40px 40px;
+}
+
+#contact {
+    background: #CAD182;
+    min-height: 20vh;
+    padding: 10px 40px 40px;
+}
+
+.home-background {
+    pointer-events: none;
+    position: absolute;
+    inset: 0;
+    padding: 0px 0px 0px 0px;
+    margin: 150px 0px 250px 0px;
+    margin-right: 65vh;
+    z-index: 1;
+    border-radius: inherit;
+    background: rgba(247, 177, 176, 0.9);
+
+    -webkit-mask-image: radial-gradient(
+        ellipse at center,
+        black 20%,
+        black 30%,
+        rgba(0, 0, 0, 0.8) 45%,
+        rgba(0, 0, 0, 0.3) 65%,
+        transparent 85%
+    );
+
+    mask-image: radial-gradient(
+        ellipse at center,
+        black 20%,
+        black 30%,
+        rgba(0, 0, 0, 0.8) 45%,
+        rgba(0, 0, 0, 0.3) 65%,
+        transparent 85%
+    );
+}
+
+.home-text {
+    position: relative;
+    padding: 100px 40px 40px 40px;
+    margin-top: 100px;
+    margin-right: 50vh;
+    z-index: 2;
+}
+
+
