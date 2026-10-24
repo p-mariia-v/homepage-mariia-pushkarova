@@ -55,6 +55,7 @@ h1 {
 h2 {
   color: #4a4f18;
   font-size: 58px;
+  margin: 40px 0px 0px 0px;
 }
 
 h3 {
@@ -65,22 +66,16 @@ h3 {
   margin: 0px 0px 40px 0px;
 
 }
+h4 {
+  color: #4a4f18;
+  font-size: 18px;
 
-p {
-  color: #842c2a;
-  font-size: 28px;
 }
 
-/*button {
-  color: #842c2a;
-  font-size: 16px;
-  margin-top: 40px;
-  background: rgba(254, 234, 199, 0.30);
-  padding: 6px 16px;
-  gap: 16px;
-  border: none;
-  border-radius: 8px;
-}*/
+p {
+  color: #4a4f18;
+  font-size: 18px;
+}
 
 /* Menu */
 .navbar {
@@ -99,7 +94,8 @@ p {
   background:#F7B1B0;
 }
 
-.nav-links {
+.nav-links,
+.contact-buttons {
   display: flex;
   gap: 16px;
   list-style: none;
@@ -108,21 +104,22 @@ p {
 }
 
 .nav-links a,
-button {
+.button{
   color: #842c2a;
   text-decoration: none;
   transition: color 0.3s ease;
   background: rgba(254, 234, 199, 0.25);
   padding: 6px 16px;
-  border-radius: 8px;
+  border-radius: 999px;
   border: none;
   font-size: 16px;
+  font-family: Arial;
 }
 
 /* Hover effect */
 .nav-links a:hover,
 .nav-links a.active,
-button:hover {
+.button:hover{
   color: #842c2a;
   background: rgba(132, 44, 42, 0.15);
 }
@@ -141,13 +138,13 @@ button:hover {
 
 #projects {
     background: #FEEAC7;
-    min-height: 140vh;
+    min-height: 125vh;
     padding: 10px 40px 40px;
 }
 
 #contact {
     background: #CAD182;
-    min-height: 20vh;
+    min-height: 40vh;
     padding: 10px 40px 40px;
 }
 
@@ -187,6 +184,64 @@ button:hover {
     margin-top: 100px;
     margin-right: 50vh;
     z-index: 2;
+}
+
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 24px;
+  align-items: start;
+  margin-top: 30px;
+
+}
+
+.project-card {
+  display: block;
+  min-width: 0;
+  overflow: hidden;
+  text-decoration: none;
+  color: inherit;
+
+  background: rgba(202, 209, 130, 0.25);
+  padding: 16px;
+  border-radius: 8px;
+  border: none;
+  box-shadow: 0 4px 12px rgba(74, 79, 24, 0.08);
+
+  transition: transform 0.2s ease,
+              box-shadow 0.2s ease;
+}
+
+.project-card:hover {
+  transform: translateY(-4px);
+  background: rgba(202, 209, 130, 0.45);
+  cursor: pointer;
+}
+
+.project-card img {
+  display: block;
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 8px;
+  border: none;
+}
+
+.project-info h4 {
+  margin: 16px 0px;
+  min-height: 48px;
+  line-height: 24px;
+}
+
+.project-tool {
+    color: #FEEAC7;
+    background: rgba(74, 79, 24, 0.5);
+    padding: 6px 16px;
+    border-radius: 999px;;
+    border: none;
+    font-size: 16px;
+    font-family: Arial;
+    margin: 16px 0px;
 }
 
 
